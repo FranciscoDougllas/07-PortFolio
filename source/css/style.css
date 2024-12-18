@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 * {
     margin: 0;
@@ -7,36 +6,96 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
-    font-family: poppins;	
+    font-family: 'Poppins', sans-serif;
 }
 
-#header{
+/* Cabeçalho */
+#header {
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    padding: 20px;
-    position: fixed;
+    align-items: center;
     width: 100%;
+    padding: 10px;
+    background: linear-gradient(#333, #000);
     color: #fff;
-    background: linear-gradient(to right, #31303c, #555);}
+    flex-wrap: wrap;
+}
 #header h1{
-    font-size: 2rem;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
 }
-#header .navbar{
+
+#header .btn-button{
+    display: none;
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+#header .btn-button:hover{
+    background-color: #fff;
+}
+
+.btn-button img{
+    width: 20px;
+    height: 15px;
+}
+
+.navbar{
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
-#header .navbar a{
+.nav-link{
     text-decoration: none;
     color: #fff;
-    font-size: 1.2rem;
-    transition: 0.3s;
-    margin: 10px;
 }
-#header .navbar a:hover{
-    color: rgb(77, 164, 40);
-    background-attachment: ;
+.nav-link:hover{
+    color: #59e10a;
+}
+
+
+/* Alterando os pontos de interrupção */
+@media screen and (max-width: 600px) {
+    #header .btn-button {
+        display: block;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #header h1 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .nav-link{
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    #header .btn-button {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+    }
+    #header h1 {
+        text-align: center;
+    }
+}
+
+
+
+/* Container Principal da Pagina */
+#main-container{
+    height: 100vh;
+    background: linear-gradient(#40404E, #9494B4);
+    background: linear-gradient(#212121, #878787);
+    background: linear-gradient(#fff, #ccc);
 }
