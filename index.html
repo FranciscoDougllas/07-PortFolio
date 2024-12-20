@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Francisco Douglas - Desenvolvedor FullStack">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./source/css/style.css">
 </head>
 <body>
 
     <header id="header">
-        <h1>[ F.D ] <span>Francisco Douglas</span></h1>
+        <h1>[ F.D ] 
+            <span>Francisco Douglas</span>
+        </h1>
 
-        <button class="btn-button">
-            <img src="./source/img/open-menu.png" alt="Abrir menu">
+        <button class="btn-button" aria-label="Abrir menu">
+            <img src="./source/img/open-menu.png" alt="Abrir menu" />
         </button>
 
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Menu de navegação">
             <a class="nav-link" href="#home">Home</a>
             <a class="nav-link" href="#sobre">Sobre</a>
+            <a class="nav-link" href="#habilidades">Habilidades</a>
             <a class="nav-link" href="#certificacoes">Certificações</a>
             <a class="nav-link" href="#projetos">Projetos</a>
             <a class="nav-link" href="#contato">Contato</a>
         </nav>
+        <button id="cores"></button>
     </header>
 
     <main id="main-container">
-        <section id="home"></section>
-        <section id="sobre"></section>
-        <section id="certificacoes"></section>
-        <section id="projetos"></section>
-        <section id="contato"></section>
+        <!-- Conteúdo principal aqui -->
+         <section id="home"></section>
+
+         <section id="sobre"></section>
+
+         <section id="habilidades"></section>
+
+         <section id="certifications"></section>
+
+         <section id="projetos"></section>
+
+         <section id="contato"></section>
     </main>
 
     <footer id="footer">
