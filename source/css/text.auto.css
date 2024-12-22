@@ -1,0 +1,46 @@
+:root{
+    --fonts-texts: 'Orbitron', 'Chakra Petch', 'Oxanium';
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#home h2{
+    font-size: 3rem;
+    font-family: var(--fonts-texts);
+    animation: blink 0.75s step-end infinite;
+    border-bottom: 5px solid #333;
+    border-radius: 10px;
+}
+#container{
+    font-family: var(--fonts-texts), sans-serif;
+    font-size: 2rem;
+    border-right: 4px solid #333;
+    padding-right: 15px;
+    border-radius: 10px;
+    animation: blink 0.75s step-end infinite;
+}
+
+@media screen and (max-width: 880px){
+    #home h2{
+        font-size: 2rem;
+        width: 200px;
+    }
+    #container{
+        font-size: 1.5rem;
+    }
+    #texto{
+        font-size: 1.5rem;
+    }
+    
+} 
+
+@keyframes blink {
+    50% {
+        border-color: transparent; 
+    }
+    100% {
+        border-color: #333; 
+    }
+} 

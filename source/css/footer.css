@@ -1,0 +1,145 @@
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.contain-footer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+    align-items: center;
+}
+.contato-footer{
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}                    
+.dados{
+    width: 500px;
+    border-radius: 5px;
+    padding: 20px;
+    color: #fff;
+    background-color: #333;
+    justify-content: space-around;
+}
+@media (max-width: 500px){
+    .dados{
+        width: 100%;
+        margin: 5px;
+    }
+}
+.dados.form-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.form-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.form-footer h3{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.form-footer textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.form-footer input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.name-email{
+    display: flex;
+    gap: 5vw;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media screen and (max-width: 400px){
+    .name-email{
+        flex-direction: column;  }
+    .form-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        margin: 0 auto;
+        justify-content: space-around;
+    } 
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.buttons button{
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.buttons .limpa{
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #ddd;
+}
+
+
+.add-dados{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+.add-dados img{
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0 2px 2px #fff);
+}
+
+.add-dados a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color: #6f67b7;
+}
+
+.add-dados iframe{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.cop{
+    margin-top: 5vh;
+    font-size: 1.2rem;
+}

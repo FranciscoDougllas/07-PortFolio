@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Play:wght@400;700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+:root{
+    --fonts-texts: 'Orbitron', 'Chakra Petch', 'Oxanium';
+}
 * {
     margin: 0;
     padding: 0;
@@ -19,31 +24,41 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    position: fixed;
     padding: 10px;
-    background: linear-gradient(#333, #000);
+    z-index: 1;
+    background: linear-gradient(#333, #111);
     color: #fff;
     flex-wrap: wrap;
     gap: 10px;
     transition: all 0.3s ease; /* Transição suave */
 }
-@media screen and (max-width: 1010px) {
-    #header {
-        justify-content: center; /* Centraliza os elementos */
-    }
+
+#header .text-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 5px;
+    font-family: Orbitron;
 }
 
 #header h1 {
     background-color: #000;
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
     border-radius: 5px;
-    border: 2px solid #6bfd02;
+    border: 2px solid #ccc;
 }
 
 #header .btn-button {
-    background: linear-gradient(90deg, #333, #555);
+    background: linear-gradient(#333, #000);
     padding: 5px;
-    border-radius: 5px;
-    filter: drop-shadow(2px 2px 2px #000);
+    border-radius: 2px;
     border: none; /* Removendo borda redundante */
 }
 
@@ -52,7 +67,7 @@ body {
 }
 
 #header .btn-button:hover {
-    background: linear-gradient(90deg, #999, #fff);
+    background-color: #666;
     cursor: pointer; /* Melhorando a interação */
 }
 
@@ -68,9 +83,9 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #fff;
+    color: #fff;                
     padding: 10px;
-    border: 1px solid transparent;
+    border: 1px solid transparent ;
     transition: color 0.3s ease; /* Transição suave */
 }
 
@@ -78,17 +93,29 @@ body {
     color: #59e10a;
     position: relative;
     cursor: pointer;
-    border: 1px solid #59e10a;
+    border-bottom: 1px solid #59e10a;
     border-radius: 5px;
+}
+
+
+
+.logo{
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    background: #ccc;
+    filter: drop-shadow(0 0 0px #fff);
 }
 
 #cores{
     padding: 15px;
     border-radius: 20px;
-    border: 0.1px solid #fff;
+    border: 2px solid #444;
 }
 
-@media screen and (max-width: 630px) {
+
+
+@media screen and (max-width: 1171px) {
     #header .btn-button {
         display: block; /* Exibe o botão */
     }
@@ -97,29 +124,31 @@ body {
         display: none; /* Oculta a barra de navegação */
     }
 
-    #header h1 > span {
-        display: none; /* Opcional: Oculta o texto adicional no título */
-    }
-
     .navbar.active {
-        display: flex; /* Exibe o menu em modo responsivo */
-        flex-direction: column;
-        gap: 15px;
+        display: flex; 
         text-align: center;
         width: 100%;
-        background: rgba(0, 0, 0, 0.8); /* Fundo para o menu em telas menores */
-        padding: 10px;
+        background: rgba(0, 0, 0, 0.8); 
         border-radius: 5px;
     }
 }
 
-@media screen and (min-width: 631px) {
+@media screen and (min-width: 1170px) {
     #header .btn-button {
         display: none; /* Oculta o botão em telas maiores */
+    }
+    #header{
+        width: 100%;
     }
 
     .navbar {
         display: flex; /* Exibe a barra de navegação */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header h1 > span{
+        display: none;
     }
 }
 
@@ -146,4 +175,79 @@ section{
     border-radius: 10px;
     background-color: #000;
     color: #fff;
+}
+
+
+
+/* Seção Sobre */
+.img-principal{
+    max-width: 50vw;
+    border-radius: 20px 0;
+    filter: drop-shadow(0 2px 2px);
+}
+
+#sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1030px){
+    #sobre{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    #sobre article p{
+        text-align: justify;
+    }
+}
+#sobre article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#sobre article p{
+    line-height: 2rem;
+}
+#sobre article p > a{
+    color: #342f77;
+    font-weight: bold;
+    text-decoration: none;
+}
+#sobre article .sobre-botoes{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.sobre-botoes a{
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(#333, #000);
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #333;
+}
+.sobre-botoes a:hover{
+    background: linear-gradient(#666, #333);
+    color: #67f906;
+    cursor: pointer;
+    border: 2px solid #67f906;
 }
