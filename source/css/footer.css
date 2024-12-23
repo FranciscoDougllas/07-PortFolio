@@ -120,7 +120,7 @@
 .add-dados img{
     width: 40px;
     height: 40px;
-    filter: drop-shadow(0 2px 2px #fff);
+    filter: drop-shadow(0 1px 1px #fff);
 }
 
 .add-dados a{
@@ -142,4 +142,27 @@ a:hover{
 .cop{
     margin-top: 5vh;
     font-size: 1.2rem;
+}
+
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 5vh;
+    text-align: center;
+}
+.social-icons{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.social-icons img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    filter: drop-shadow(0 1px 1px #fff);
 }

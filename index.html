@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="./source/css/style.css">
     <link rel="stylesheet" href="./source/css/footer.css">
     <link rel="stylesheet" href="./source/css/text.auto.css">
+    <link rel="stylesheet" href="./source/css/carrossel.css">
 
 </head>
 <body>
 
-    <header id="header">
-        <!-- <img src="./abc.png" alt="Imagen Logo Pagina" class="logo"> -->
-        
-
+    <!-- Cabeçalho -->
+    <header id="header">        
         <div class="text-logo">
             <h1>[ F.D ] <span>Francisco Douglas</span></h1>
             <button id="cores"></button>
@@ -33,13 +32,11 @@
             <a class="nav-link" href="#projetos">Projetos</a>
             <a class="nav-link" href="#contato">Contato</a>
         </nav>
-        
-
-        
     </header>
 
     <main id="main-container">
-        <!-- Conteúdo principal aqui -->
+
+        <!-- Seção Home -->
          <section id="home">
             <h2>Seja bem vindo</h2>
             <div id="container">
@@ -47,6 +44,7 @@
             </div>
          </section>
 
+         <!-- Seção Sobre -->
          <section id="sobre">
             <figure>
                 <img src="./abc.png" alt="Imagen Principal" class="img-principal">
@@ -54,7 +52,6 @@
 
             <article>
                    <p>Olá, sou <b>Francisco Douglas, marido e pai de dois filhos</b>, com uma paixão por tecnologia e design. Como aspirante a desenvolvedor <b>Full-Stack e UX/UI Designer</b>, meu foco está em transformar ideias em soluções digitais inovadoras, unindo criatividade e expertise técnica para criar experiências impactantes. Atualmente, estou cursando <b>Engenharia de Software</b> na Faculdade <b>Descomplica</b>, sempre buscando me atualizar com as melhores práticas da área. Além disso, sigo em constante evolução profissional, com cursos em plataformas como <a href="https://www.dio.me/users/engsoftwarefrancisco" target="_blank">DIO Digital Innovation One</a>, <a href="https://comunidade.onebitcode.com/u/85008817" target="_blank">OneBitCode</a>, <a href="https://www.origamid.com/" target="_blank">Origamid</a>, <a href="https://alunos.b7web.com.br/login" target="_blank">B7WEB</a>, <a href="https://www.udemy.com/">Udemy</a> e <a href="https://hotmart.com/pt-br/club/escola-tipscode/products/1132769" target="_blank">TipsCode</a>, para expandir meu conhecimento e acompanhar as tendências do mercado.</p>
-
                    <div class="sobre-botoes">
                     <a href="#contato">Contato</a>
                     <a href="#projetos">Projetos</a>
@@ -62,19 +59,96 @@
             </article>
          </section>
 
-         <section id="habilidades"></section>
+         <!-- Secção de Habilidades -->
+         <section id="habilidades">
+            <h2>Minhas habilidades</h2>
+            <div class="carrossel-container">
+                <button class="anterior prButton">&#10094;</button>
+                <div class="carrossel">
+                    <div class="slide" id="frontend">
+                        <img src="./source/carrossel/frontend.jpg" alt="Imagem 1">
+                        <div class="info">
+                            <h2>FrontEnd</h2>
+                            <p>O FrontEnd é a parte visual de um website ou aplicação, com a qual os usuários interagem diretamente. Utiliza tecnologias como HTML, CSS e JavaScript para criar interfaces atraentes e responsivas.</p>
+                        </div>
+                    </div>
+                    <div class="slide" id="backend">
+                        <img src="./source/carrossel/backend.jpg" alt="Imagem 2">
+                        <div class="info">
+                            <h2>BackEnd</h2>
+                            <p>O BackEnd lida com a lógica do servidor, banco de dados e integração de APIs. É responsável pelo processamento de dados e operações de back-office, usando linguagens como Python, Java e frameworks como Node.jse Django.</p>       
+                        </div>
+                    </div>
+                    <div class="slide" id="mobile">
+                        <img src="./source/carrossel/mobile.jpg" alt="Imagem 3">
+                        <div class="info">
+                            <h2>Mobile</h2>
+                            <p>Desenvolvimento Mobile cria aplicativos para dispositivos móveis. Pode ser nativo (Swift para iOS e Kotlin/Java para Android) ou cross-platform (React Native e Flutter), permitindo apps em múltiplas plataformas.</p>
+                        </div>
+                    </div>
+                    <div class="slide" id="devops">
+                        <img src="./source/carrossel/devops.jpg" alt="Imagem 4">
+                        <div class="info">
+                            <h2>DevOps</h2>
+                            <p>DevOps integra desenvolvimento de software e operações de TI para melhorar colaboração e produtividade. Automatiza processos de desenvolvimento, teste, entrega e monitoramento, usando ferramentas como Docker, Kubernetes e Jenkins.</p>
+                        </div>
+                    </div>
 
-         <section id="certifications"></section>
+                    <div class="slide" id="designer">
+                        <img src="./source/carrossel/ux-ui.png" alt="Imagem 4">
+                        <div class="info">
+                            <h2>UX/UI Designer</h2>
+                            <p>DevOps integra desenvolvimento de software e operações de TI para melhorar colaboração e produtividade. Automatiza processos de desenvolvimento, teste, entrega e monitoramento, usando ferramentas como Docker, Kubernetes e Jenkins.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="proximo prButton">&#10095;</button>
+            </div>
 
-         <section id="projetos">
+            <div class="habilidades-icons">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone html">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone css">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone javascript">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone react">
+                
+                <img src="./source/img/icons/imagem.png" alt="" class="icone python">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone java">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone nodejs">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone django">
+
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+                <img src="./source/img/icons/imagem.png" alt="" class="icone ">
+            </div>
          </section>
 
+         <!-- Seção de Certificados -->
+         <section id="certificacoes"></section>
+
+         <!-- Seção de Projetos -->
+         <section id="projetos">
+         </section>
     </main>
 
+    <!-- Rodape e Seção Final -->
     <footer id="contato">
 
         <div class="contain-footer">
-
             <div class="contato-footer">
                 <div class="dados">
                     <form action="" class="form-footer">
@@ -133,10 +207,25 @@
                     </div>
                 </div>
             </div>
+
+        <div class="social">
+            <h2>Minhas Redes Sociais</h2>
+            <div class="social-icons">
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+            </div>
+            
+        </div>
         <p class="cop">&copy; Francisco Douglas 2024 FullStack Developer</p>
     </footer>
 
     <script src="./source/js/script.js"></script>
     <script src="./source/js/text-auto.js"></script>
+    <script src="./source/js/carrossel.js"></script>
 </body>
 </html>
