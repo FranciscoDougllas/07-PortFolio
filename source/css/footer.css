@@ -46,12 +46,7 @@
     margin: 0 auto;
     justify-content: space-around;
 }
-.form-footer h3{
-    margin: 0 auto;
-    margin-bottom: 10px;
-    font-size: 1.3rem;
-    text-align: center;
-}
+
 
 .form-footer textarea{
     width: 100%;
@@ -59,12 +54,23 @@
     border: 1px solid #000;
     border-radius: 5px;
 }
+fieldset{
+    padding: 10px;
+}
+
+fieldset legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #67f906;
+    text-align: center;
+}
 
 .form-footer input{
     width: 100%;
     padding: 10px;
     border: 1px solid #000;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .name-email{
