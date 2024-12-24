@@ -132,10 +132,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const ferramentas = {
         frontend: ['html', 'css', 'javascript', 'react', 'angular', 'vue', 'typescript'],
-        backend: ['html', 'css', 'javascript', 'react', 'angular', 'vue', 'typescript'],//['python', 'java', 'nodejs', 'django', 'php'],
+        backend: ['python', 'java', 'nodejs', 'django', 'php'],
         mobile: ['html', 'css', 'javascript', 'react', 'angular', 'vue', 'typescript'], //['swift', 'kotlin', 'java', 'react-native', 'flutter'],
         devops: ['html', 'css', 'javascript', 'react', 'angular', 'vue', 'typescript'],//['docker', 'kubernetes', 'jenkins'],
-        designer: ['html', 'css', 'javascript', 'react', 'angular', 'vue', 'typescript'],//['figma', 'adobe-xd', 'sketch', 'invision', 'zeplin'],
+        designer: ['html', 'java', 'javascript', 'react', 'angular', 'vue', 'typescript'],//['figma', 'adobe-xd', 'sketch', 'invision', 'zeplin'],
     };
 
     function atualizarSlides() {

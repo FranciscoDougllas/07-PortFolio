@@ -3,34 +3,38 @@
     --prev-next-opacity: 0.5;
 }
 #habilidades{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    border: 1px solid #333;
 }
 #habilidades h2{
     margin: 0 auto;
     font-size: 2rem;
 }
 .carrossel-container {
-    width: 60%;
+    width: 100%;
     height: 500px;
     perspective: 200px;
     overflow: hidden;
-    background-color: #3333330e;
+    background-color: #33333354;
 }
-
-
-
+.container-habilidades{
+    display: flex;
+    width: 100%;
+    border: 1px solid #333;
+    justify-content: space-evenly;
+    padding: 10%;
+}
 .carrossel {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transform: translateZ(-190px);
+    transform: translateZ(-200px);
     gap: 20px;
 }
-
-
 
 .slide {
     position: absolute;
@@ -39,6 +43,7 @@
     opacity: var(--prev-next-opacity);
     top: 10%;
     transition: transform 1s, opacity 1s;
+    box-shadow: #222 10px 10px 10px;
 }
 
 
@@ -46,9 +51,8 @@
     width: 500px;
     height: 400px;
     border-radius: 5px;
-    filter: drop-shadow(0 5px 10px #000);
-    /* object-fit: cover; */
-    box-shadow: 0 5px 5px #000;
+    object-fit: contain;
+    background-color: #222;
 }
 
 
@@ -71,8 +75,6 @@
 
 
 
-
-
 .slide .info {
     top: 0;
     border-radius: 5px;
@@ -84,7 +86,7 @@
     padding: 10px;
     color: #fff;
     filter: drop-shadow();
-    background-color: #00000080;
+    
 }
 .slide .info h2 {
     margin-bottom: 10px;
@@ -147,8 +149,8 @@ button.proximo {
 }
 
 .habilidades-icons img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     padding: 10px;
     border: 1px solid #333;
     border-radius: 5px;
